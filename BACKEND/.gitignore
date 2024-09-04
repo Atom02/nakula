@@ -31,10 +31,10 @@ archive.zip
 # macOS
 .DS_Store
 
-static/ignored/*
 static/hdf/*
 static/buffer/ccam/*
 static/buffer/wrf/*
+static/ignored/*
 
 env.prod
 env.dev
