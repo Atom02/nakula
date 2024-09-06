@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">NAKULA</string>
+    <string name="title_activity_main">NAKULA</string>
+    <string name="package_name">org.candra.nakula.app</string>
+    <string name="custom_url_scheme">org.candra.nakula.app</string>
+</resources>

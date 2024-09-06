@@ -1,0 +1,54 @@
+{
+  "name": "candra.nakula.app.com",
+  "version": "0.0.1",
+  "description": "NAKULA",
+  "productName": "NAKULA",
+  "author": "Atom02 <candra.nurihsan9@gmail.com>",
+  "private": true,
+  "scripts": {
+    "lint": "eslint --ext .js,.vue ./",
+    "format": "prettier --write \"**/*.{js,vue,scss,html,md,json}\" --ignore-path .gitignore",
+    "test": "echo \"No test specified\" && exit 0",
+    "dev": "quasar dev",
+    "build": "quasar build",
+    "devmobile": "quasar dev -m capacitor -T android",
+    "buildmobile": "quasar build --mode capacitor --target android --ide"
+  },
+  "dependencies": {
+    "@capacitor/filesystem": "^6.0.1",
+    "@quasar/extras": "^1.16.4",
+    "atmocontentreader": "file:../../../ANTASENA/plugin/atomcontentreader",
+    "axios": "^1.2.1",
+    "esri-leaflet": "^3.0.12",
+    "esri-leaflet-geocoder": "^3.1.4",
+    "events": "^3.3.0",
+    "leaflet": "^1.9.4",
+    "lodash": "^4.17.21",
+    "luxon": "^3.5.0",
+    "mitt": "^3.0.1",
+    "pinia": "^2.0.11",
+    "pinia-plugin-persistedstate": "^4.0.0",
+    "pouchdb": "^9.0.0",
+    "pouchdb-find": "^9.0.0",
+    "quasar": "^2.16.0",
+    "vue": "^3.4.18",
+    "vue-i18n": "^9.0.0",
+    "vue-router": "^4.0.12"
+  },
+  "devDependencies": {
+    "@intlify/vite-plugin-vue-i18n": "^3.3.1",
+    "@quasar/app-vite": "^1.9.0",
+    "autoprefixer": "^10.4.2",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-vue": "^9.0.0",
+    "postcss": "^8.4.14",
+    "prettier": "^2.5.1",
+    "vite-plugin-checker": "^0.7.1"
+  },
+  "engines": {
+    "node": "^20 || ^18 || ^16",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1"
+  }
+}

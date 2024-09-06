@@ -313,10 +313,10 @@ def process(request:Request, ip: str = Depends(check_ip)):
 			
 			if 'humidity' not in hdf_object:
 				hdf_object.create_group('humidity')
-				hdf_object['temp'].attrs['long_name']='Humidity'
-				hdf_object['temp'].attrs['standard_name']='Humidity'
-				hdf_object['temp'].attrs['units']='kg/kg'
-				hdf_object['temp'].attrs['description']='Humidity at 2m'
+				hdf_object['humidity'].attrs['long_name']='Humidity'
+				hdf_object['humidity'].attrs['standard_name']='Humidity'
+				hdf_object['humidity'].attrs['units']='kg/kg'
+				hdf_object['humidity'].attrs['description']='Humidity at 2m'
 			
 			if "PSFC" not in hdf_object:
 				hdf_object.create_group('PSFC')

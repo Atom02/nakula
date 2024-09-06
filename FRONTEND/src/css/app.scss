@@ -1,0 +1,41 @@
+// app global css in SCSS form
+$text-sizes: 8, 16, 24, 32, 40, 48, 56, 64, 72, 80;
+
+$text-size-options: (
+  "sm": 0.8,
+  "md": 1,
+  "lg": 1.2,
+  "xl": 1.8
+);
+
+@each $text-size, $multiplier in $text-size-options {
+  [data-text-size="#{$text-size}"] {
+    @each $text-sz in $text-sizes {
+      .text-size-#{$text-sz} {
+        font-size: #{$text-sz * $multiplier}px;
+        // .q-timeline.custom-timeline {
+        //   .q-timeline__heading {
+        //     .q-timeline__heading-title {
+        //       // font-size: #{3 * $multiplier}rem
+        //       font-size: #{$text-sz * $multiplier}px;
+        //     }
+        //   }
+        //   .q-timeline__entry {
+        //     .q-timeline__subtitle {
+        //       // font-size: #{12 * $multiplier}px
+        //       font-size: #{($text-sz - 16) * $multiplier}px;
+        //     }
+        //     .q-timeline__content {
+        //       .q-timeline__title {
+        //         // font-size: #{1.25 * $multiplier}rem
+        //         font-size: #{($text-sz - 8) * $multiplier}px;
+        //       }
+        //       // font-size: #{24 * $multiplier}px
+        //       font-size: #{($text-sz - 8) * $multiplier}px;
+        //     }
+        //   }
+        // }
+      }
+    }
+  }
+}
